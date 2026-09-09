@@ -60,11 +60,11 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" className="relative overflow-hidden bg-[#020F26] font-sans text-white scroll-mt-28">
+    <footer id="contact" className="relative overflow-hidden bg-[#03152f] font-sans text-white scroll-mt-28">
       {/* Ambient dot-grid + glow, matching the dark sections elsewhere on the page */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.07)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(ellipse_80%_55%_at_50%_0%,#000_60%,transparent_100%)]" />
       <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#1c4ea0]/25 blur-[100px]" />
-      <div className="pointer-events-none absolute -right-24 bottom-24 h-96 w-96 rounded-full bg-[#0b3475]/30 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-24 bottom-24 h-96 w-96 rounded-full bg-[#ff5b12]/20 blur-[120px]" />
 
       {/* 1. Call to Action Card */}
       <div className="relative z-10 px-5 pb-8 pt-10 sm:px-8 lg:px-12">
@@ -76,8 +76,8 @@ export default function Footer() {
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
 
           <div className="relative z-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-medium tracking-wide text-blue-100">
-              <span className="h-2 w-2 rounded-full bg-[#FFDE6A]" />
+            <div className="section-label mb-4 inline-flex items-center gap-2 rounded-full border border-[#ff5b12] bg-[#ff5b12] px-3.5 py-1.5 text-xs font-medium tracking-wide text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff5b12]" />
               Let&apos;s Get Started
             </div>
 
@@ -159,7 +159,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#FFDE6A]/50 hover:bg-[#FFDE6A]/10 hover:text-[#FFDE6A]"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ff5b12]/60 hover:bg-[#ff5b12]/10 hover:text-[#ff7a35]"
                 >
                   <Icon size={14} />
                 </a>
@@ -225,7 +225,7 @@ export default function Footer() {
               aria-label="Designed and Developed by Wexoraa Infotech"
             >
               Designed and Developed by{' '}
-              <span className="font-semibold text-white">Wexoraa Infotech</span>
+              <span className="font-semibold text-[#ff5b12]">Wexoraa Infotech</span>
             </Link>
 
             <button
@@ -265,7 +265,7 @@ function FooterColumn({ title, links }) {
 function ContactCard({ icon: Icon, label, value, href }) {
   const content = (
     <div className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#FFDE6A] transition-transform duration-300 group-hover:scale-105">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#ff6a16] transition-transform duration-300 group-hover:scale-105">
         <Icon size={18} />
       </div>
       <div className="min-w-0">

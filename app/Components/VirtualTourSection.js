@@ -13,12 +13,12 @@ export default function VirtualTourSection() {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto space-y-2 mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-1.5 bg-[#0a1b3d] text-white px-3.5 py-1 rounded-full text-xs font-medium">
-            <Compass className="w-3.5 h-3.5 text-blue-400 animate-spin" style={{ animationDuration: '8s' }} />
+          <div className="section-label inline-flex items-center gap-1.5 bg-[#ff5b12] text-white px-3.5 py-1 rounded-full text-xs font-medium">
+            <Compass className="w-3.5 h-3.5 text-white animate-spin" style={{ animationDuration: '8s' }} />
             Interactive Experience
           </div>
 
-          <h2 className="section-topic text-[#0a1b3d]">
+          <h2 className="section-topic text-[#05265e]">
             Take A Virtual Tour Of Our Campus Laundry
           </h2>
         </div>
@@ -64,7 +64,7 @@ export default function VirtualTourSection() {
                 />
 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1b3d]/80 via-black/20 to-black/20 group-hover:via-black/10 transition-all duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05265e]/80 via-black/20 to-black/20 group-hover:via-black/10 transition-all duration-300" />
 
                 {/* Top Badge */}
                 <div className="absolute top-3.5 left-3.5 sm:top-4 sm:left-4 bg-black/40 backdrop-blur-md border border-white/20 text-white px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-1.5">
@@ -79,7 +79,7 @@ export default function VirtualTourSection() {
                     aria-label="Play Virtual Tour Video"
                     className="group/btn relative flex items-center justify-center"
                   >
-                    <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white text-[#0a1b3d] shadow-md flex items-center justify-center">
+                    <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white text-[#ff5b12] shadow-md flex items-center justify-center">
                       <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
                     </div>
                   </button>

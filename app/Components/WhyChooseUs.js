@@ -78,12 +78,12 @@ export default function WhyChoose() {
 
   return (
     <section className="relative isolate bg-[#020A17] font-sans text-white">
-      <header className="sticky top-20 z-[1] grid h-[calc(100svh-6rem)] place-content-center overflow-hidden bg-[#031738] px-5 text-center lg:top-28 lg:h-[calc(100svh-8rem)]">
+      <header className="sticky top-20 z-[1] grid h-[calc(100svh-6rem)] place-content-center overflow-hidden bg-[#05265e] px-5 text-center lg:top-28 lg:h-[calc(100svh-8rem)]">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.10)_1px,transparent_1px)] [background-size:54px_54px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_70%,transparent_100%)]" />
         <div className="relative z-10 mx-auto max-w-4xl">
           <div className="mb-4 flex justify-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-[#0a1b3d] px-3.5 py-1.5 text-xs font-medium text-white">
-              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-[#063b87] px-3.5 py-1.5 text-xs font-medium text-white">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#ff6a16]" />
               Why Taerg
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function WhyChoose() {
                       sizes="(max-width: 1024px) 100vw, 58vw"
                       className="object-cover transition-transform duration-700 hover:scale-[1.025]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#031738]/45 via-transparent to-white/5" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#05265e]/45 via-transparent to-white/5" />
                   </div>
                 </div>
               </article>

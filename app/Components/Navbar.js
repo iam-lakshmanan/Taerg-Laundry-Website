@@ -71,13 +71,13 @@ export default function Navbar() {
                     href={link.href}
                     className={`relative py-2 text-sm lg:text-[15px] font-semibold tracking-[-0.01em] transition-colors duration-200 ${
                       isActive
-                        ? 'text-[#0B2545]'
-                        : 'text-slate-600 hover:text-[#0B2545]'
+                        ? 'text-[#063b87]'
+                        : 'text-slate-600 hover:text-[#063b87]'
                     }`}
                   >
                     {link.name}
                     <span
-                      className={`absolute inset-x-0 bottom-0 h-0.5 bg-[#0B2545] transition-transform duration-200 origin-left ${
+                      className={`absolute inset-x-0 bottom-0 h-0.5 bg-[#ff5b12] transition-transform duration-200 origin-left ${
                         isActive ? 'scale-x-100' : 'scale-x-0'
                       }`}
                     />
@@ -101,24 +101,24 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-[#0B2545] hover:bg-gray-100 rounded-md transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0B2545]"
+              className="p-2 text-[#063b87] hover:bg-orange-50 rounded-md transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff5b12]"
               aria-label="Toggle Menu"
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-navigation"
             >
               <div className="w-5 h-4 flex flex-col justify-between items-end relative">
                 <span
-                  className={`h-[2px] bg-[#0B2545] rounded-full transition-all duration-300 origin-right ${
+                  className={`h-[2px] bg-[#063b87] rounded-full transition-all duration-300 origin-right ${
                     isMobileMenuOpen ? 'w-5 -rotate-45 translate-y-[1px]' : 'w-5'
                   }`}
                 ></span>
                 <span
-                  className={`h-[2px] bg-[#0B2545] rounded-full transition-all duration-300 ${
+                  className={`h-[2px] bg-[#063b87] rounded-full transition-all duration-300 ${
                     isMobileMenuOpen ? 'opacity-0 w-0' : 'w-3.5'
                   }`}
                 ></span>
                 <span
-                  className={`h-[2px] bg-[#0B2545] rounded-full transition-all duration-300 origin-right ${
+                  className={`h-[2px] bg-[#063b87] rounded-full transition-all duration-300 origin-right ${
                     isMobileMenuOpen ? 'w-5 rotate-45 -translate-y-[1px]' : 'w-4'
                   }`}
                 ></span>
@@ -147,8 +147,8 @@ export default function Navbar() {
                   }}
                   className={`border-l-2 px-4 py-3 text-[15px] font-semibold transition-colors ${
                     isActive
-                      ? 'border-[#0B2545] bg-slate-100 text-[#0B2545]'
-                      : 'border-transparent text-slate-600 hover:border-slate-300 hover:bg-slate-50 hover:text-[#0B2545]'
+                      ? 'border-[#ff5b12] bg-orange-50 text-[#063b87]'
+                      : 'border-transparent text-slate-600 hover:border-orange-200 hover:bg-orange-50 hover:text-[#063b87]'
                   }`}
                 >
                   {link.name}

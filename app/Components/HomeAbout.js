@@ -40,12 +40,12 @@ export default function AboutUs() {
     <section id="about" className="bg-[#F8FAFC] px-4 py-20 font-sans sm:px-6 sm:py-24 lg:px-10">
       <div className="mx-auto w-full max-w-6xl">
         <header className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-3.5 py-1.5 text-white">
+          <div className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-3.5 py-1.5 text-white">
             <span className="h-2 w-2 rounded-full bg-white" />
             <span className="text-xs font-medium tracking-wide">About Taerg</span>
           </div>
 
-          <h2 className="section-topic mt-5 text-[#031738]">
+          <h2 className="section-topic mt-5 text-[#05265e]">
             Built on Trust, Driven by Innovation
           </h2>
 
@@ -62,7 +62,7 @@ export default function AboutUs() {
             return (
               <article
                 key={card.id}
-                className="relative min-h-[230px] overflow-hidden rounded-2xl border border-[#173C78]/35 bg-[#031738] p-6 shadow-[0_18px_40px_-28px_rgba(3,23,56,0.75)] sm:p-7"
+                className="relative min-h-[230px] overflow-hidden rounded-2xl border border-[#ff5b12]/35 bg-[#05265e] p-6 shadow-[0_18px_40px_-28px_rgba(3,23,56,0.75)] sm:p-7"
               >
                 <span
                   className="pointer-events-none absolute -right-2 -top-5 select-none text-[7.5rem] font-bold leading-none text-white/[0.035]"
@@ -72,7 +72,7 @@ export default function AboutUs() {
                 </span>
 
                 <div className="relative z-10 flex h-full flex-col">
-                  <div className="flex h-12 w-12 self-center items-center justify-center rounded-xl bg-white text-[#031738] shadow-sm">
+                  <div className="flex h-12 w-12 self-center items-center justify-center rounded-xl bg-white text-[#ff5b12] shadow-sm">
                     <Icon size={24} strokeWidth={1.8} aria-hidden="true" />
                   </div>
 

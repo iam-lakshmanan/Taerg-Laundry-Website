@@ -61,14 +61,14 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Top Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#031738] text-white px-3.5 py-1 rounded-full shadow-xs mb-3">
+        <div className="section-label inline-flex items-center gap-2 bg-[#ff5b12] text-white px-3.5 py-1 rounded-full shadow-xs mb-3">
           <span className="w-2 h-2 rounded-full bg-white inline-block"></span>
           <span className="text-xs font-medium tracking-wide">Testimonials</span>
         </div>
 
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10">
-          <h2 className="section-topic mb-2 text-[#031738]">
+          <h2 className="section-topic mb-2 text-[#05265e]">
             Loved by Students, Trusted Every Day
           </h2>
           <p className="text-gray-500 text-xs md:text-sm font-light">
@@ -83,7 +83,7 @@ export default function Testimonials() {
           <button
             onClick={prevSlide}
             aria-label="Previous Testimonial"
-            className="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 bg-white border border-gray-200 rounded-full flex items-center justify-center text-[#031738] shadow-sm"
+            className="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 bg-white border border-orange-200 rounded-full flex items-center justify-center text-[#ff5b12] shadow-sm"
           >
             <ChevronLeft size={20} />
           </button>
@@ -107,7 +107,7 @@ export default function Testimonials() {
           <button
             onClick={nextSlide}
             aria-label="Next Testimonial"
-            className="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 bg-white border border-gray-200 rounded-full flex items-center justify-center text-[#031738] shadow-xl"
+            className="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 bg-white border border-orange-200 rounded-full flex items-center justify-center text-[#ff5b12] shadow-xl"
           >
             <ChevronRight size={20} />
           </button>
@@ -122,7 +122,7 @@ export default function Testimonials() {
               aria-label={`Go to slide ${idx + 1}`}
               className={`h-2 rounded-full transition-all duration-300 ${
                 currentIndex === idx
-                  ? 'w-5 bg-[#031738]'
+                  ? 'w-5 bg-[#ff5b12]'
                   : 'w-2 bg-gray-300 hover:bg-gray-400'
               }`}
             />
@@ -130,7 +130,7 @@ export default function Testimonials() {
         </div>
 
         {/* Bottom Dark Navy Metrics Banner */}
-        <div className="w-full bg-[#031738] rounded-xl p-5 md:p-8 text-white shadow-lg">
+        <div className="w-full bg-[#05265e] rounded-xl p-5 md:p-8 text-white shadow-lg">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
             {stats.map((stat, idx) => {
               const IconComponent = stat.icon;
@@ -171,7 +171,7 @@ function TestimonialCard({ item }) {
         <span className="text-4xl font-serif text-indigo-200 leading-none block select-none -mb-1">
           “
         </span>
-        <p className="text-[#031738] text-xs md:text-sm font-medium leading-relaxed">
+        <p className="text-[#05265e] text-xs md:text-sm font-medium leading-relaxed">
           {item.quote}
         </p>
       </div>
@@ -179,11 +179,11 @@ function TestimonialCard({ item }) {
       <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           {/* Person/User Icon Circle */}
-          <div className="w-9 h-9 rounded-full border border-gray-200 bg-slate-100 text-[#031738] flex items-center justify-center shrink-0 shadow-2xs">
+          <div className="w-9 h-9 rounded-full border border-orange-200 bg-orange-50 text-[#ff5b12] flex items-center justify-center shrink-0 shadow-2xs">
             <User size={18} />
           </div>
           <div>
-            <h4 className="text-[#031738] text-xs font-bold leading-snug">
+            <h4 className="text-[#05265e] text-xs font-bold leading-snug">
               {item.name}
             </h4>
             <p className="text-gray-400 text-[11px] font-light">

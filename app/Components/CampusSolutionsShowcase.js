@@ -47,15 +47,15 @@ export default function CampusSolutionsShowcase() {
       className="relative overflow-hidden bg-[#f5f8fc] px-4 py-10 sm:px-6 md:py-10 lg:px-10"
     >
       <div className="pointer-events-none absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-200/35 blur-[100px]" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#0b3475]/10 blur-[110px]" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#ff5b12]/10 blur-[110px]" />
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-9 text-center md:mb-12">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-4 py-1.5 text-xs font-medium tracking-wide text-white">
-            <span className="h-2 w-2 rounded-full bg-blue-400" />
+          <span className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-medium tracking-wide text-white">
+            <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
             Complete Campus Solutions
           </span>
-          <h2 className="section-topic mx-auto mt-4 max-w-4xl text-[#031738]">
+          <h2 className="section-topic mx-auto mt-4 max-w-4xl text-[#05265e]">
             From Campus Need to Everyday Service
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm font-light leading-relaxed text-slate-600 md:text-base">
@@ -74,7 +74,7 @@ export default function CampusSolutionsShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#020f26]/85 via-transparent to-transparent" />
 
-            <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/15 bg-[#031738]/82 p-5 text-white shadow-2xl backdrop-blur-md sm:inset-x-7 sm:bottom-7 sm:p-6">
+            <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/15 bg-[#05265e]/90 p-5 text-white shadow-2xl backdrop-blur-md sm:inset-x-7 sm:bottom-7 sm:p-6">
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-blue-200">
                 Built around your campus
               </p>
@@ -103,7 +103,7 @@ export default function CampusSolutionsShowcase() {
                   >
                     <div className="relative z-10 mx-auto shrink-0 lg:absolute lg:left-0 lg:top-1/2 lg:mx-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
                       <div
-                        className="solution-seam-icon grid h-12 w-12 place-items-center rounded-full border border-blue-200 bg-white text-[#0b3475] shadow-[0_12px_30px_-13px_rgba(11,52,117,0.85)] transition-colors duration-300 group-hover:bg-[#0b3475] group-hover:text-white sm:h-14 sm:w-14 lg:h-[4.5rem] lg:w-[4.5rem]"
+                        className="solution-seam-icon grid h-12 w-12 place-items-center rounded-full border border-orange-200 bg-white text-[#ff5b12] shadow-[0_12px_30px_-13px_rgba(255,91,18,0.45)] transition-colors duration-300 group-hover:bg-[#ff5b12] group-hover:text-white sm:h-14 sm:w-14 lg:h-[4.5rem] lg:w-[4.5rem]"
                         style={{ '--solution-delay': `${index * -0.55}s` }}
                       >
                         <Icon size={25} strokeWidth={1.65} />
@@ -114,7 +114,7 @@ export default function CampusSolutionsShowcase() {
                     </div>
 
                     <div className="min-w-0 max-w-xl pt-0.5 text-center transition-transform duration-300 lg:max-w-none lg:text-left lg:group-hover:translate-x-1.5">
-                      <h3 className="text-base font-semibold tracking-[-0.02em] text-[#031738] sm:text-lg">
+                      <h3 className="text-base font-semibold tracking-[-0.02em] text-[#05265e] sm:text-lg">
                         {solution.title}
                       </h3>
                       <p className="mt-1.5 text-xs font-light leading-relaxed text-slate-600 sm:text-sm">
@@ -126,9 +126,9 @@ export default function CampusSolutionsShowcase() {
               })}
             </div>
 
-            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-2xl border-b border-r border-[#245da6]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
-              <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-[#245da6] shadow-[0_0_12px_rgba(36,93,166,0.7)]" />
-              <span className="absolute bottom-3 right-3 h-px w-10 bg-gradient-to-l from-[#245da6]/80 to-transparent" />
+            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-2xl border-b border-r border-[#ff5b12]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
+              <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-[#ff5b12] shadow-[0_0_12px_rgba(255,91,18,0.7)]" />
+              <span className="absolute bottom-3 right-3 h-px w-10 bg-gradient-to-l from-[#ff5b12]/80 to-transparent" />
             </div>
           </div>
         </div>

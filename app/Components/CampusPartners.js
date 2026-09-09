@@ -61,9 +61,11 @@ export default function CampusPartners() {
           
           {/* Left Column: Heading & Description */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 bg-[#0a1b3d] text-white px-4 py-2 rounded-full text-sm font-medium">
-              <span className="w-2 h-2 rounded-full bg-white"></span>
-              Our Campus Partners
+            <div className="flex justify-center lg:justify-start">
+              <div className="section-label inline-flex items-center gap-2 bg-[#ff5b12] text-white px-4 py-2 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-white"></span>
+                Our Campus Partners
+              </div>
             </div>
             
             <h2 className="section-topic text-gray-900">
@@ -80,7 +82,7 @@ export default function CampusPartners() {
             {institutions.map((item, index) => (
               <div 
                 key={index} 
-                className="campus-partner-card group flex items-center gap-5 rounded-2xl border border-[#0a1b3d]/30 p-6 shadow-sm"
+                className="campus-partner-card group flex items-center gap-5 rounded-2xl border border-[#ff5b12]/30 p-6 shadow-sm"
               >
                 <span className="campus-card-fold" aria-hidden="true" />
                 <span className="campus-card-points" aria-hidden="true">
@@ -109,7 +111,7 @@ export default function CampusPartners() {
 
                 {/* Institution Details */}
                 <div className="relative z-10">
-                  <h3 className="text-xl font-semibold text-[#0a1b3d]">{item.name}</h3>
+                  <h3 className="text-xl font-semibold text-[#05265e]">{item.name}</h3>
                   <p className="text-xs font-medium text-gray-600">{item.fullName}</p>
                   <p className="mt-0.5 text-[11px] text-gray-400">{item.location}</p>
                 </div>

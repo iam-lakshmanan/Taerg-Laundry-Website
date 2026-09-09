@@ -6,7 +6,6 @@ import {
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  Sparkles,
 } from "lucide-react";
 
 const steps = [
@@ -63,12 +62,12 @@ export default function HowItWorksSection() {
     >
       <div className="mx-auto w-full max-w-[1760px]">
         <header className="mx-auto mb-7 max-w-4xl text-center sm:mb-8">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-[#0a1b3d] px-3 py-1 text-xs font-medium text-white">
-            <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+          <div className="section-label inline-flex items-center gap-1.5 rounded-full bg-[#ff5b12] px-3 py-1 text-xs font-medium text-white">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#ff6a16]" />
             Our Process
           </div>
 
-          <h2 id="process-title" className="section-topic mt-4 text-[#0a1b3d]">
+          <h2 id="process-title" className="section-topic mt-4 text-[#05265e]">
             How Taerg Laundry Helps Students
           </h2>
         </header>
@@ -84,10 +83,9 @@ export default function HowItWorksSection() {
               className="object-cover"
               priority={activeStep === 0}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#031738]/55 via-transparent to-black/5" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#05265e]/55 via-transparent to-black/5" />
 
-            <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[#0a1b3d] shadow-sm">
-              <Sparkles className="h-3.5 w-3.5 text-blue-600" aria-hidden="true" />
+            <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[#05265e] shadow-sm">
               Step {step.id} of {String(steps.length).padStart(2, "0")}
             </div>
 
@@ -115,15 +113,15 @@ export default function HowItWorksSection() {
           </div>
 
           <article className="flex min-h-[280px] flex-col justify-center p-5 sm:min-h-[320px] sm:p-6 lg:col-span-5 lg:min-h-[420px] lg:p-8 xl:p-9">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ff5b12]">
               {step.subtitle}
             </p>
 
             <div className="mt-4 flex items-start gap-4">
-              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-[#0a1b3d] text-base font-semibold text-white shadow-sm sm:h-14 sm:w-14">
+              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-[#063b87] text-base font-semibold text-white shadow-sm sm:h-14 sm:w-14">
                 {step.id}
               </span>
-              <h3 className="pt-1 text-2xl font-semibold leading-tight tracking-tight text-[#0a1b3d] sm:text-3xl">
+              <h3 className="pt-1 text-2xl font-semibold leading-tight tracking-tight text-[#05265e] sm:text-3xl">
                 {step.title}
               </h3>
             </div>
@@ -136,9 +134,9 @@ export default function HowItWorksSection() {
               {step.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-medium text-[#0a1b3d]"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-medium text-[#05265e]"
                 >
-                  <CheckCircle2 className="h-3.5 w-3.5 text-blue-600" />
+                  <CheckCircle2 className="h-3.5 w-3.5 text-[#ff5b12]" />
                   {tag}
                 </span>
               ))}
@@ -153,7 +151,7 @@ export default function HowItWorksSection() {
                   aria-label={`Show ${item.subtitle}`}
                   aria-current={activeStep === index ? "step" : undefined}
                   className={`h-1.5 flex-1 rounded-full ${
-                    activeStep === index ? "bg-blue-600" : "bg-slate-200"
+                    activeStep === index ? "bg-[#ff5b12]" : "bg-slate-200"
                   }`}
                 />
               ))}

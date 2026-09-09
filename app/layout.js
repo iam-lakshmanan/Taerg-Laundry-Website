@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${manrope.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="font-sans bg-white text-slate-900 min-h-full flex flex-col selection:bg-[#0B2545] selection:text-white">
+      <body className="font-sans bg-white text-slate-900 min-h-full flex flex-col selection:bg-[#ff5b12] selection:text-white">
         <Scroll>
           {/* Navigation Header */}
           <Navbar />

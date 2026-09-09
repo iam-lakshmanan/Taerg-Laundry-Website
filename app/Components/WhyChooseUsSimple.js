@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion, useReducedMotion } from 'framer-motion';
 
 const reasons = [
   {
@@ -28,41 +31,97 @@ const reasons = [
 ];
 
 export default function WhyChooseUsSimple() {
+  const reduceMotion = useReducedMotion();
+  const reveal = reduceMotion
+    ? { opacity: 1, y: 0 }
+    : { opacity: 1, y: 0 };
+  const hidden = reduceMotion
+    ? { opacity: 1, y: 0 }
+    : { opacity: 0, y: 24 };
+
   return (
-    <section className="bg-white px-4 py-12 font-sans text-[#0a1b3d] sm:px-6 sm:py-16 lg:px-12">
+    <section className="bg-white px-4 py-12 font-sans text-[#05265e] sm:px-6 sm:py-16 lg:px-12">
       <div className="mx-auto max-w-6xl">
-        <header className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#245da6]">
+        <motion.header
+          className="mx-auto max-w-3xl text-center"
+          initial={hidden}
+          whileInView={reveal}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+        >
+          <motion.p
+            className="section-label mx-auto rounded-full bg-[#ff5b12] px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.16em] text-white"
+            initial={hidden}
+            whileInView={reveal}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+          >
             Why Taerg
-          </p>
-          <h2 className="section-topic mt-2 text-[#0a1b3d]">Why Choose Taerg</h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+          </motion.p>
+          <motion.h2
+            className="section-topic mt-2 text-[#05265e]"
+            initial={hidden}
+            whileInView={reveal}
+            viewport={{ once: true }}
+            transition={{ duration: 0.45, delay: reduceMotion ? 0 : 0.08 }}
+          >
+            Why Choose Taerg
+          </motion.h2>
+          <motion.p
+            className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base"
+            initial={hidden}
+            whileInView={reveal}
+            viewport={{ once: true }}
+            transition={{ duration: 0.45, delay: reduceMotion ? 0 : 0.16 }}
+          >
             Reliable campus laundry solutions that are easy for students and
             simple for institutions to manage.
-          </p>
-        </header>
+          </motion.p>
+        </motion.header>
 
         <div className="mt-8 divide-y divide-slate-200 border-y border-slate-200">
           {reasons.map((reason, index) => (
-            <article
+            <motion.article
               key={reason.number}
-              className="grid gap-5 py-6 sm:grid-cols-[1fr_240px] sm:items-center sm:gap-8 lg:grid-cols-[1fr_360px] lg:py-8"
+              className="grid gap-5 py-7 sm:grid-cols-[1fr_260px] sm:items-center sm:gap-6 lg:grid-cols-2 lg:gap-10 lg:py-9"
+              initial={hidden}
+              whileInView={reveal}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
             >
-              <div className="flex gap-4 sm:gap-6">
-                <span className="pt-1 text-sm font-semibold text-[#245da6]">
+              <motion.div
+                className="flex gap-4 sm:gap-6"
+                initial={reduceMotion ? { opacity: 1 } : { opacity: 0, x: -18 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.35 }}
+                transition={{ duration: 0.45, delay: reduceMotion ? 0 : 0.08 }}
+              >
+                <motion.span
+                  className="pt-1 text-base font-semibold text-[#ff5b12] lg:text-lg"
+                  initial={reduceMotion ? false : { opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35 }}
+                >
                   {reason.number}
-                </span>
+                </motion.span>
                 <div>
-                  <h3 className="text-xl font-semibold leading-snug sm:text-2xl">
+                  <h3 className="text-2xl font-semibold leading-snug lg:text-3xl">
                     {reason.title}
                   </h3>
-                  <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                  <p className="mt-3 text-base leading-relaxed text-slate-600 lg:text-lg">
                     {reason.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-slate-100">
+              <motion.div
+                className="relative aspect-[16/9] overflow-hidden rounded-xl bg-slate-100"
+                initial={reduceMotion ? { opacity: 1 } : { opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.5, delay: reduceMotion ? 0 : 0.12 }}
+              >
                 <Image
                   src={reason.image}
                   alt={reason.alt}
@@ -71,8 +130,8 @@ export default function WhyChooseUsSimple() {
                   className="object-cover"
                   priority={index === 0}
                 />
-              </div>
-            </article>
+              </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

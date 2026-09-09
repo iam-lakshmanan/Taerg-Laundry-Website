@@ -113,7 +113,7 @@ const faqs = [
 
 export default function OurServicesPage() {
   return (
-    <div className="overflow-hidden bg-white font-sans text-[#031738]">
+    <div className="overflow-hidden bg-white font-sans text-[#05265e]">
       <section className="relative isolate flex h-[50svh] min-h-[340px] max-h-[480px] items-center justify-center overflow-hidden bg-[#020f26] px-5 pb-8 pt-28 text-center text-white sm:px-8 sm:pb-10 sm:pt-32 lg:px-12">
         <Image
           src="/images/carousel4.png"
@@ -142,11 +142,11 @@ export default function OurServicesPage() {
       <section id="services" className="relative scroll-mt-24 bg-[#f5f8fc] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-4 py-1.5 text-xs font-medium tracking-wide text-white">
-              <span className="h-2 w-2 rounded-full bg-blue-400" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-medium tracking-wide text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               Complete Service Portfolio
             </span>
-            <h2 className="section-topic mx-auto mt-4 text-[#031738]">
+            <h2 className="section-topic mx-auto mt-4 text-[#05265e]">
               Built for Campus. Managed by Taerg.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm font-light leading-7 text-slate-600 sm:text-base">
@@ -177,16 +177,16 @@ export default function OurServicesPage() {
                   <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#061c3f] text-white transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:w-14">
                     <Icon size={24} strokeWidth={1.7} aria-hidden="true" />
                   </div>
-                  <div className="h-px w-10 bg-[#245da6]/45" />
-                  <span className="text-xs font-semibold tracking-[0.18em] text-[#245da6]">
+                  <div className="h-px w-10 bg-[#ff5b12]/45" />
+                  <span className="text-xs font-semibold tracking-[0.18em] text-[#ff5b12]">
                     {service.number}
                   </span>
                 </div>
 
-                <p className="mt-7 text-xs font-semibold uppercase tracking-[0.17em] text-[#245da6]">
+                <p className="mt-7 text-xs font-semibold uppercase tracking-[0.17em] text-[#ff5b12]">
                   {service.audience}
                 </p>
-                <h3 className="mt-3 max-w-xl text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.04] tracking-[-0.05em] text-[#031738]">
+                <h3 className="mt-3 max-w-xl text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.04] tracking-[-0.05em] text-[#05265e]">
                   {service.title}
                 </h3>
                 <p className="mt-5 max-w-xl text-sm font-light leading-7 text-slate-600 sm:text-base sm:leading-8">
@@ -196,7 +196,7 @@ export default function OurServicesPage() {
                 <ul className="mt-7 space-y-3">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3 text-sm font-medium text-slate-600 sm:text-base">
-                      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-blue-50 text-[#245da6]">
+                      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-orange-50 text-[#ff5b12]">
                         <Check size={13} strokeWidth={2.4} aria-hidden="true" />
                       </span>
                       {feature}
@@ -227,7 +227,7 @@ export default function OurServicesPage() {
         );
       })}
 
-      <section className="relative isolate overflow-hidden bg-[#031738] px-5 py-16 text-white sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+      <section className="relative isolate overflow-hidden bg-[#05265e] px-5 py-16 text-white sm:px-8 sm:py-20 lg:px-12 lg:py-24">
         <Image
           src="/images/carousel2.png"
           alt=""
@@ -241,8 +241,8 @@ export default function OurServicesPage() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-medium text-blue-100 backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[#ffde6a]" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full border border-[#ff5b12] bg-[#ff5b12] px-4 py-1.5 text-xs font-medium text-white backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               One Service. Two Clear Outcomes.
             </span>
             <h2 className="section-topic mx-auto mt-5 max-w-3xl text-white">
@@ -274,7 +274,7 @@ export default function OurServicesPage() {
               <span className="absolute hidden h-64 w-px bg-gradient-to-b from-transparent via-blue-300/30 to-transparent md:block" />
               <div className="relative z-10 grid h-24 w-24 place-items-center rounded-full border border-blue-200/25 bg-[#08244d] shadow-[0_0_0_10px_rgba(59,130,246,0.06),0_20px_50px_rgba(0,0,0,0.35)]">
                 <WashingMachine size={35} strokeWidth={1.45} className="text-white" aria-hidden="true" />
-                <span className="absolute -bottom-2 rounded-full bg-[#ffde6a] px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.16em] text-[#031738]">
+                <span className="absolute -bottom-2 rounded-full bg-[#ff6a16] px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.16em] text-white">
                   Taerg
                 </span>
               </div>
@@ -297,7 +297,7 @@ export default function OurServicesPage() {
           </div>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 text-center sm:flex-row sm:text-left">
-            <ShieldCheck size={30} strokeWidth={1.6} className="shrink-0 text-[#ffde6a]" aria-hidden="true" />
+            <ShieldCheck size={30} strokeWidth={1.6} className="shrink-0 text-[#ff6a16]" aria-hidden="true" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">The shared result</p>
               <p className="mt-1 text-base font-medium text-white sm:text-lg">
@@ -311,12 +311,12 @@ export default function OurServicesPage() {
       <section className="bg-[#f5f8fc] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#245da6]">Service questions</p>
-            <h2 className="section-topic mt-4 text-[#031738]">Clear answers for campus teams.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ff5b12]">Service questions</p>
+            <h2 className="section-topic mt-4 text-[#05265e]">Clear answers for campus teams.</h2>
             <p className="mt-5 max-w-md text-sm font-light leading-7 text-slate-600 sm:text-base">
               Every institution is different. These are the questions campus teams most often ask before planning a service.
             </p>
-            <Link href="/about" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#0b3475] transition-colors hover:text-[#245da6]">
+            <Link href="/about" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#063b87] transition-colors hover:text-[#ff5b12]">
               Learn more about Taerg
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
@@ -324,13 +324,13 @@ export default function OurServicesPage() {
 
           <div className="space-y-3">
             {faqs.map((faq, index) => (
-              <details key={faq.question} className="group rounded-2xl border border-[#173c78]/12 bg-white px-5 py-1 shadow-sm open:border-[#245da6]/30 sm:px-6">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 py-5 text-base font-semibold tracking-[-0.02em] text-[#031738] marker:hidden sm:text-lg">
+              <details key={faq.question} className="group rounded-2xl border border-[#063b87]/12 bg-white px-5 py-1 shadow-sm open:border-[#ff5b12]/30 sm:px-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 py-5 text-base font-semibold tracking-[-0.02em] text-[#05265e] marker:hidden sm:text-lg">
                   <span className="flex items-start gap-3">
-                    <span className="mt-0.5 text-xs tracking-[0.12em] text-[#245da6]">0{index + 1}</span>
+                    <span className="mt-0.5 text-xs tracking-[0.12em] text-[#ff5b12]">0{index + 1}</span>
                     {faq.question}
                   </span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-50 text-[#0b3475] transition-transform duration-300 group-open:rotate-45">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-orange-50 text-[#ff5b12] transition-transform duration-300 group-open:rotate-45">
                     <span className="text-xl font-light leading-none">+</span>
                   </span>
                 </summary>

@@ -41,13 +41,13 @@ export default function TrustedPartners() {
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
         
         {/* Top Tag/Badge */}
-        <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#0B2545] px-4 py-1.5 text-white shadow-sm">
+        <div className="section-label mb-3 inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-white shadow-sm">
           <span className="w-2.5 h-2.5 rounded-full bg-white inline-block"></span>
           <span className="text-xs font-medium tracking-wide">Our partners</span>
         </div>
 
         {/* Section Heading */}
-        <h2 className="section-topic mb-7 text-[#0B2545] md:mb-8">
+        <h2 className="section-topic mb-7 text-[#05265e] md:mb-8">
           Trusted Partners
         </h2>
 

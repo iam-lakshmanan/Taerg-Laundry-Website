@@ -91,18 +91,18 @@ const aboutFaqs = [
 
 export default function AboutUsContent() {
   return (
-    <div className="overflow-hidden bg-white text-[#031738]">
+    <div className="overflow-hidden bg-white text-[#05265e]">
       <section className="relative px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="pointer-events-none absolute -left-28 top-14 h-80 w-80 rounded-full bg-blue-100/70 blur-[110px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16 xl:gap-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-4 py-1.5 text-xs font-medium text-white">
-              <span className="h-2 w-2 rounded-full bg-blue-400" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-medium text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               About the Company
             </span>
 
-            <h2 className="section-topic mt-5 max-w-2xl text-[#031738]">
+            <h2 className="section-topic mt-5 max-w-2xl text-[#05265e]">
               Campus laundry, built around student life.
             </h2>
 
@@ -122,7 +122,7 @@ export default function AboutUsContent() {
                 ['Student', 'Centred'],
               ].map(([top, bottom]) => (
                 <div key={top} className="px-3 first:pl-0 sm:px-5 sm:first:pl-0">
-                  <p className="text-base font-semibold tracking-[-0.025em] text-[#031738] sm:text-lg">{top}</p>
+                  <p className="text-base font-semibold tracking-[-0.025em] text-[#05265e] sm:text-lg">{top}</p>
                   <p className="mt-0.5 text-[0.65rem] uppercase tracking-[0.14em] text-slate-400 sm:text-xs">{bottom}</p>
                 </div>
               ))}
@@ -130,7 +130,7 @@ export default function AboutUsContent() {
           </div>
 
           <div className="relative mx-auto w-full max-w-2xl">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#031738] sm:aspect-[16/11]">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#05265e] sm:aspect-[16/11]">
               <Image
                 src="/images/carousel3.png"
                 alt="Taerg team serving a student at a professionally managed campus laundry"
@@ -147,7 +147,7 @@ export default function AboutUsContent() {
               </div>
             </div>
 
-            <div className="pointer-events-none absolute -bottom-4 -left-4 h-24 w-24 rounded-bl-3xl border-b-2 border-l-2 border-[#245da6] sm:-bottom-5 sm:-left-5" />
+            <div className="pointer-events-none absolute -bottom-4 -left-4 h-24 w-24 rounded-bl-3xl border-b-2 border-l-2 border-[#ff5b12] sm:-bottom-5 sm:-left-5" />
           </div>
         </div>
       </section>
@@ -155,11 +155,11 @@ export default function AboutUsContent() {
       <section className="bg-[#f5f8fc] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-4 py-1.5 text-xs font-medium text-white">
-              <span className="h-2 w-2 rounded-full bg-blue-400" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-medium text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               What We Do
             </span>
-            <h2 className="section-topic mt-5 text-[#031738]">
+            <h2 className="section-topic mt-5 text-[#05265e]">
               One team for the complete campus laundry journey.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm font-light leading-7 text-slate-600 sm:text-base">
@@ -192,13 +192,13 @@ export default function AboutUsContent() {
                 return (
                   <article key={capability.number} className="group grid grid-cols-[auto_1fr] gap-4 border-b border-slate-200 py-7 first:pt-0 last:border-0 last:pb-0 sm:gap-6">
                     <div className="flex flex-col items-center gap-3">
-                      <div className="grid h-12 w-12 place-items-center rounded-full bg-[#031738] text-white transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:w-14">
+                      <div className="grid h-12 w-12 place-items-center rounded-full bg-[#063b87] text-white transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:w-14">
                         <Icon size={23} strokeWidth={1.65} aria-hidden="true" />
                       </div>
-                      <span className="text-[0.65rem] font-semibold tracking-[0.16em] text-[#245da6]">{capability.number}</span>
+                      <span className="text-[0.65rem] font-semibold tracking-[0.16em] text-[#ff5b12]">{capability.number}</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold tracking-[-0.03em] text-[#031738] sm:text-2xl">{capability.title}</h3>
+                      <h3 className="text-xl font-semibold tracking-[-0.03em] text-[#05265e] sm:text-2xl">{capability.title}</h3>
                       <p className="mt-2 text-sm font-light leading-7 text-slate-600 sm:text-base">{capability.description}</p>
                     </div>
                   </article>
@@ -209,14 +209,14 @@ export default function AboutUsContent() {
         </div>
       </section>
 
-      <section className="relative isolate overflow-hidden bg-[#031738] px-5 py-10 text-white sm:px-8 sm:py-12 lg:px-12 lg:py-16">
+      <section className="relative isolate overflow-hidden bg-[#05265e] px-5 py-10 text-white sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.07)_1px,transparent_1px)] [background-size:60px_60px] [mask-image:radial-gradient(ellipse_at_center,#000_20%,transparent_80%)]" />
         <div className="pointer-events-none absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/15 blur-[120px]" />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-medium text-blue-100">
-              <span className="h-2 w-2 rounded-full bg-[#ffde6a]" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full border border-[#ff5b12] bg-[#ff5b12] px-4 py-1.5 text-xs font-medium text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               Why We Exist
             </span>
             <h2 className="section-topic mt-5 text-white">A better everyday experience for every campus.</h2>
@@ -232,7 +232,7 @@ export default function AboutUsContent() {
                 We make dependable laundry care accessible to students while giving institutions a professionally managed operation they can trust.
               </p>
               <div className="mt-6 flex items-center gap-3 text-sm font-medium text-blue-100">
-                <CheckCircle2 size={18} className="text-[#ffde6a]" aria-hidden="true" />
+                <CheckCircle2 size={18} className="text-[#ff6a16]" aria-hidden="true" />
                 Convenience without compromising care
               </div>
             </article>
@@ -246,7 +246,7 @@ export default function AboutUsContent() {
                 We envision cleaner, healthier and more efficient campuses supported by scalable laundry infrastructure and lasting partnerships.
               </p>
               <div className="mt-6 flex items-center gap-3 text-sm font-medium text-blue-100">
-                <ShieldCheck size={18} className="text-[#ffde6a]" aria-hidden="true" />
+                <ShieldCheck size={18} className="text-[#ff6a16]" aria-hidden="true" />
                 Stronger systems for long-term campus value
               </div>
             </article>
@@ -257,14 +257,16 @@ export default function AboutUsContent() {
       <section className="bg-white px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.68fr_1.32fr] lg:gap-20">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#245da6]">What Guides Us</p>
-            <h2 className="section-topic mt-4 text-[#031738]">Principles behind every Taerg campus.</h2>
+            <p className="section-label rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white">
+              What Guides Us
+            </p>
+            <h2 className="section-topic mt-4 text-[#05265e]">Principles behind every Taerg campus.</h2>
             <p className="mt-5 max-w-md text-sm font-light leading-7 text-slate-600 sm:text-base">
               Our decisions stay grounded in the people who use the service and the institutions that depend on it.
             </p>
             <Link
               href="/our-services"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#0b3475] transition-colors hover:text-[#245da6]"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#063b87] transition-colors hover:text-[#ff5b12]"
             >
               Explore our services
               <ArrowRight size={16} aria-hidden="true" />
@@ -274,8 +276,8 @@ export default function AboutUsContent() {
           <div className="border-t border-slate-200">
             {values.map((value) => (
               <article key={value.number} className="grid gap-3 border-b border-slate-200 py-6 sm:grid-cols-[4rem_0.75fr_1.25fr] sm:items-start sm:gap-6 sm:py-7">
-                <span className="text-xs font-semibold tracking-[0.18em] text-[#245da6]">{value.number}</span>
-                <h3 className="text-lg font-semibold tracking-[-0.025em] text-[#031738] sm:text-xl">{value.title}</h3>
+                <span className="text-xs font-semibold tracking-[0.18em] text-[#ff5b12]">{value.number}</span>
+                <h3 className="text-lg font-semibold tracking-[-0.025em] text-[#05265e] sm:text-xl">{value.title}</h3>
                 <p className="text-sm font-light leading-7 text-slate-600 sm:text-base">{value.description}</p>
               </article>
             ))}
@@ -286,17 +288,17 @@ export default function AboutUsContent() {
       <section className="bg-[#f5f8fc] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#031738] px-4 py-1.5 text-xs font-medium text-white">
-              <span className="h-2 w-2 rounded-full bg-blue-400" />
+            <span className="section-label inline-flex items-center gap-2 rounded-full bg-[#ff5b12] px-4 py-1.5 text-xs font-medium text-white">
+              <span className="h-2 w-2 rounded-full bg-[#ff6a16]" />
               About Taerg FAQ
             </span>
-            <h2 className="section-topic mt-4 text-[#031738]">Questions campus teams often ask.</h2>
+            <h2 className="section-topic mt-4 text-[#05265e]">Questions campus teams often ask.</h2>
             <p className="mt-5 max-w-md text-sm font-light leading-7 text-slate-600 sm:text-base">
               A quick introduction to our campus focus, operating model and partnership approach.
             </p>
             <a
               href="#contact"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#0b3475] transition-colors hover:text-[#245da6]"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#063b87] transition-colors hover:text-[#ff5b12]"
             >
               Speak with our team
               <ArrowRight size={16} aria-hidden="true" />
@@ -306,14 +308,14 @@ export default function AboutUsContent() {
           <div className="border-t border-slate-300/80">
             {aboutFaqs.map((faq, index) => (
               <details key={faq.question} className="group border-b border-slate-300/80">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 py-5 text-base font-semibold tracking-[-0.02em] text-[#031738] marker:hidden sm:py-6 sm:text-lg">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 py-5 text-base font-semibold tracking-[-0.02em] text-[#05265e] marker:hidden sm:py-6 sm:text-lg">
                   <span className="flex items-start gap-3 sm:gap-4">
-                    <span className="mt-1 text-[0.65rem] font-semibold tracking-[0.16em] text-[#245da6]">
+                    <span className="mt-1 text-[0.65rem] font-semibold tracking-[0.16em] text-[#ff5b12]">
                       0{index + 1}
                     </span>
                     {faq.question}
                   </span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[#173c78]/15 bg-white text-[#0b3475] transition-transform duration-300 group-open:rotate-45">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[#ff5b12]/20 bg-white text-[#ff5b12] transition-transform duration-300 group-open:rotate-45">
                     <span className="text-xl font-light leading-none">+</span>
                   </span>
                 </summary>

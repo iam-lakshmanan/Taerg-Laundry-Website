@@ -100,7 +100,7 @@ export default function LaundryBenefits() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#020A17]/15 via-[#031738]/10 to-black/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#03152f]/15 via-[#05265e]/10 to-black/15" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,rgba(0,0,0,0.48)_100%)]" />
       </div>
 
@@ -112,8 +112,8 @@ export default function LaundryBenefits() {
             </span>
 
             <div className="relative z-10">
-              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-blue-100">
-                <span className="h-2 w-2 rounded-full bg-[#FFDE6A]" />
+              <div className="section-label mb-3 inline-flex items-center gap-2 rounded-full border border-[#ff5b12] bg-[#ff5b12] px-3.5 py-1.5 text-xs font-semibold tracking-wide text-white">
+                <span className="h-2 w-2 rounded-full bg-white" />
                 Campus Benefits
               </div>
 
@@ -157,7 +157,7 @@ export default function LaundryBenefits() {
                   }}
                 >
                   <div
-                    className="pointer-events-none absolute inset-x-0 top-0 h-[2px] origin-left bg-gradient-to-r from-blue-400 via-white/90 to-[#FFDE6A]"
+                    className="pointer-events-none absolute inset-x-0 top-0 h-[2px] origin-left bg-gradient-to-r from-[#063b87] via-white/90 to-[#ff5b12]"
                     style={{
                       transform: `scaleX(${cardProgress[index]})`,
                       opacity: 0.35 + cardProgress[index] * 0.65,
