@@ -4,7 +4,7 @@ import CampusPartners from "./Components/CampusPartners";
 import Benefits from './Components/LaundryBenefits'
 import HowItWorksSection from "./Components/HowItWorksSection";
 import VirtualTourSection from "./Components/VirtualTourSection";
-import WhyChoose from "./Components/WhyChooseUs";
+import WhyChoose from "./Components/WhyChooseUsSimple";
 import Partners from './Components/HomePartners'
 import Testimonial from "./Components/Testimonicals";
 import ScrollReveal from "./Components/ScrollReveal";

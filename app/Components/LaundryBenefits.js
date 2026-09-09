@@ -90,9 +90,9 @@ export default function LaundryBenefits() {
   return (
     <section
       id="campus-benefits"
-      className="relative bg-black text-white"
+      className="relative grid bg-black text-white"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 col-start-1 row-start-1 h-screen w-full self-start overflow-hidden">
         <Image
           src="/images/carousel3.png"
           alt="Modern campus laundry facility"
@@ -104,8 +104,8 @@ export default function LaundryBenefits() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,rgba(0,0,0,0.48)_100%)]" />
       </div>
 
-      <div className="relative z-10 -mt-[100vh] pb-[12vh]">
-        <div className="flex min-h-screen items-center justify-center px-4 py-16 sm:px-6">
+      <div className="relative z-10 col-start-1 row-start-1 min-w-0 self-start py-6 sm:py-10">
+        <div className="flex items-center justify-center px-4 pb-2 sm:px-6 sm:pb-4">
           <header className="relative w-full max-w-5xl overflow-hidden rounded-3xl border border-white/15 bg-black/45 px-5 py-10 text-center shadow-2xl backdrop-blur-md sm:px-10 sm:py-14 md:px-16">
             <span className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[58%] select-none text-[150px] font-black leading-none text-white/[0.055] sm:text-[210px]">
               05
@@ -129,7 +129,7 @@ export default function LaundryBenefits() {
           </header>
         </div>
 
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 sm:gap-4 sm:px-6 lg:px-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
 
@@ -140,7 +140,7 @@ export default function LaundryBenefits() {
                   cardRefs.current[index] = element;
                 }}
                 data-benefit-index={index}
-                className={`flex min-h-[58vh] items-center justify-center ${
+                className={`flex items-center justify-center ${
                   index % 2 === 0 ? 'lg:justify-start' : 'lg:justify-end'
                 }`}
               >
