@@ -63,7 +63,7 @@ export default function CampusSolutionsShowcase() {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[1.75rem] border border-[#173c78]/15 bg-white shadow-[0_28px_80px_-36px_rgba(3,23,56,0.48)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="overflow-hidden rounded-sm border border-[#173c78]/15 bg-white shadow-[0_28px_80px_-36px_rgba(3,23,56,0.48)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
           <div className="relative min-h-[360px] overflow-hidden sm:min-h-[460px] lg:min-h-[680px]">
             <Image
               src="/images/carousel4.png"
@@ -74,7 +74,7 @@ export default function CampusSolutionsShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#020f26]/85 via-transparent to-transparent" />
 
-            <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/15 bg-[#05265e]/90 p-5 text-white shadow-2xl backdrop-blur-md sm:inset-x-7 sm:bottom-7 sm:p-6">
+            <div className="absolute inset-x-5 bottom-5 rounded-l border border-white/15 bg-[#05265e]/90 p-5 text-white shadow-2xl backdrop-blur-md sm:inset-x-7 sm:bottom-7 sm:p-6">
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-blue-200">
                 Built around your campus
               </p>
@@ -83,7 +83,7 @@ export default function CampusSolutionsShowcase() {
               </p>
             </div>
 
-            <div className="pointer-events-none absolute left-4 top-4 h-16 w-24 rounded-tl-2xl border-l border-t border-blue-300/80 sm:left-6 sm:top-6 sm:h-20 sm:w-32">
+            <div className="pointer-events-none absolute left-4 top-4 h-16 w-24 rounded-tl-l border-l border-t border-blue-300/80 sm:left-6 sm:top-6 sm:h-20 sm:w-32">
               <span className="absolute -left-1 -top-1 h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.9)]" />
               <span className="absolute left-3 top-3 h-px w-10 bg-gradient-to-r from-blue-300/80 to-transparent" />
             </div>
@@ -126,7 +126,7 @@ export default function CampusSolutionsShowcase() {
               })}
             </div>
 
-            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-2xl border-b border-r border-[#ff5b12]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
+            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-sm border-b border-r border-[#ff5b12]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
               <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-[#ff5b12] shadow-[0_0_12px_rgba(255,91,18,0.7)]" />
               <span className="absolute bottom-3 right-3 h-px w-10 bg-gradient-to-l from-[#ff5b12]/80 to-transparent" />
             </div>
