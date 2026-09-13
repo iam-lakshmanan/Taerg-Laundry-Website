@@ -184,6 +184,13 @@ body {
   background: #ffffff !important;
 }
 
+/* Keep cards crisp across the site while preserving pills and circles. */
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl {
+  border-radius: 0.25rem !important;
+}
+
 .action-ripple::before {
   content: none;
 }
