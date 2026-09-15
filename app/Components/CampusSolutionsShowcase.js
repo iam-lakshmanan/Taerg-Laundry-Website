@@ -63,7 +63,7 @@ export default function CampusSolutionsShowcase() {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-sm border border-[#173c78]/15 bg-white shadow-[0_28px_80px_-36px_rgba(3,23,56,0.48)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="overflow-hidden rounded-[0.30rem] border border-[#173c78]/15 bg-white shadow-[0_28px_80px_-36px_rgba(3,23,56,0.48)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
           <div className="relative min-h-[360px] overflow-hidden sm:min-h-[460px] lg:min-h-[680px]">
             <Image
               src="/images/carousel4.png"
@@ -126,7 +126,7 @@ export default function CampusSolutionsShowcase() {
               })}
             </div>
 
-            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-sm border-b border-r border-[#ff5b12]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
+            <div className="pointer-events-none absolute bottom-4 right-4 h-16 w-24 rounded-br-2xl border-b border-r border-[#ff5b12]/70 sm:bottom-6 sm:right-6 sm:h-20 sm:w-32">
               <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-[#ff5b12] shadow-[0_0_12px_rgba(255,91,18,0.7)]" />
               <span className="absolute bottom-3 right-3 h-px w-10 bg-gradient-to-l from-[#ff5b12]/80 to-transparent" />
             </div>
